@@ -5,13 +5,13 @@ let click3 = document.querySelector('.click3')
 let random = document.querySelector('.random')
 
 click3.onclick = () => {
-    if(h1.innerHTML < 10) {
+    if(h1.innerHTML < 1000) {
         h1.textContent++
     }
 }
 
 click.onclick = () => {
-    if(h1.innerHTML >= -9) {
+    if(h1.innerHTML >= -999) {
         h1.textContent--
     }
 }
@@ -21,7 +21,7 @@ click2.onclick = () => {
 }
 
 random.onclick = () => {
-    let rd = Math.round(Math.random() * 10) 
+    let rd = Math.round(Math.random() * 1000) 
     h1.innerHTML = rd
     console.log(rd);
 }
